@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B79D8329-8BF5-4D04-829A-862672E012D7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Nxt2</RootNamespace>
+    <AssemblyName>Nxt2</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Commands\I2CReadSensorType.cs" />
+    <Compile Include="Commands\I2CReadSonarSensor.cs" />
+    <Compile Include="Commands\I2CResponseSensorType.cs" />
+    <Compile Include="Commands\I2CResponseSonarSensor.cs" />
+    <Compile Include="Commands\I2CSendCommand.cs" />
+    <Compile Include="Commands\LegoBootCommand.cs" />
+    <Compile Include="Commands\LegoClose.cs" />
+    <Compile Include="Commands\LegoDelete.cs" />
+    <Compile Include="Commands\LegoGetBatteryLevel.cs" />
+    <Compile Include="Commands\LegoKeepAlive.cs" />
+    <Compile Include="Commands\LegoLSRead.cs" />
+    <Compile Include="Commands\LegoLSWrite.cs" />
+    <Compile Include="Commands\LegoMessageRead.cs" />
+    <Compile Include="Commands\LegoMessageWrite.cs" />
+    <Compile Include="Commands\LegoOpenRead.cs" />
+    <Compile Include="Commands\LegoOpenWriteData.cs" />
+    <Compile Include="Commands\LegoRead.cs" />
+    <Compile Include="Commands\LegoResetInputScaledValue.cs" />
+    <Compile Include="Commands\LegoResetMotorPosition.cs" />
+    <Compile Include="Commands\LegoResponse.cs" />
+    <Compile Include="Commands\LegoResponseBootCommand.cs" />
+    <Compile Include="Commands\LegoResponseClose.cs" />
+    <Compile Include="Commands\LegoResponseDelete.cs" />
+    <Compile Include="Commands\LegoResponseKeepAlive.cs" />
+    <Compile Include="Commands\LegoResponseLSGetStatus.cs" />
+    <Compile Include="Commands\LegoResponseMessageRead.cs" />
+    <Compile Include="Commands\LegoResponseOpenRead.cs" />
+    <Compile Include="Commands\LegoResponseOpenWriteData.cs" />
+    <Compile Include="Commands\LegoResponseOpenWriteLinear.cs" />
+    <Compile Include="Commands\LegoResponseRead.cs" />
+    <Compile Include="Commands\LegoResponseWrite.cs" />
+    <Compile Include="Commands\LegoSetBrickName.cs" />
+    <Compile Include="Commands\LegoWrite.cs" />
+    <Compile Include="Commands\NxtCommandSequence.cs" />
+    <Compile Include="Commands\UltraSonicPacket.cs" />
+    <Compile Include="Common\NxtCommon.cs" />
+    <Compile Include="Commands\LegoCommand.cs" />
+    <Compile Include="Commands\SetBrickName.cs" />
+    <Compile Include="CommandType.cs" />
+    <Compile Include="DeviceInfo.cs" />
+    <Compile Include="Extensions.cs" />
+    <Compile Include="GlobalSuppressions.cs" />
+    <Compile Include="Handlers\SetBrickNameHandler.cs" />
+    <Compile Include="LightSensor.cs" />
+    <Compile Include="MotorModes.cs" />
+    <Compile Include="MotorPort.cs" />
+    <Compile Include="RunState.cs" />
+    <Compile Include="MotorState.cs" />
+    <Compile Include="NxtBrick.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sensor.cs" />
+    <Compile Include="SensorEventArgs.cs" />
+    <Compile Include="SensorMode.cs" />
+    <Compile Include="SensorPort.cs" />
+    <Compile Include="SensorState.cs" />
+    <Compile Include="SensorType.cs" />
+    <Compile Include="SoundSensor.cs" />
+    <Compile Include="TouchSensor.cs" />
+    <Compile Include="Version.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

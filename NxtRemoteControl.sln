@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NxtRemoteControl.WindowsClient", "NxtRemoteControl.WindowsClient\NxtRemoteControl.WindowsClient.csproj", "{BD9DB6C8-06E2-4F31-943A-27A50A3858F7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nxt2", "Nxt2\Nxt2.csproj", "{B79D8329-8BF5-4D04-829A-862672E012D7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BD9DB6C8-06E2-4F31-943A-27A50A3858F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD9DB6C8-06E2-4F31-943A-27A50A3858F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD9DB6C8-06E2-4F31-943A-27A50A3858F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD9DB6C8-06E2-4F31-943A-27A50A3858F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B79D8329-8BF5-4D04-829A-862672E012D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B79D8329-8BF5-4D04-829A-862672E012D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B79D8329-8BF5-4D04-829A-862672E012D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B79D8329-8BF5-4D04-829A-862672E012D7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
